@@ -1,0 +1,19 @@
+<ion-view id="page5" title="Login">
+    <ion-content class="has-header" padding="true" style="background: url(img/bg.jpg) center; background-size: cover;" style="background:center;">
+		<form name="loginForm" class="list " id="login-form1">
+            <ion-list id="login-list2">
+                <div class="app-icon"></div>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label" style="color: #9F9F9F;">Email</span>
+                    <input ng-model="user.email" style="color: black;" type="email" placeholder="Email">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label" style="color: #9F9F9F;" >Password</span>
+                    <input ng-model="user.password" style="color: black;" type="password" placeholder="Password">
+                </label>
+            </ion-list>
+            <div style="height: 40px;" class="spacer"></div>
+            <button ng-click="loginEmail(loginForm,user)" class=" button button-assertive  button-block  icon-left ion-ios-email-outline "  id="signup-button3">LOGIN WITH EMAIL</button>
+        </form>
+	</ion-content>
+</ion-view>

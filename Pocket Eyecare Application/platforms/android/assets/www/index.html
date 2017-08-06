@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title></title>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	  <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+	  <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=RobotoDraft%3A400%2C500%2C700%2C400italic" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+
+    <!-- Sound -->
+    <script src="https://cdn.pubnub.com/pubnub-3.15.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/pubnub-angular/pubnub-angular-3.2.1.min.js"></script>
+
+    <!-- OCR -->
+    <script src="lib/ocrad.js"></script>
+
+    <!-- QR Code -->
+    <script src="https://rawgit.com/gdi2290/angular-websocket/v1.0.9/angular-websocket.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ionic-service-core/ionic-core.js"></script>
+    <script src="lib/ionic-service-push/ionic-push.js"></script>
+    <script src="lib/ionic-service-deploy/ionic-deploy.js"></script>
+    <script src="lib/ionic-service-analytics/ionic-analytics.js"></script>
+
+    <!--Firebase Header-->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+
+	  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBHS-LbPk_Ho4gAvHKPgaiwGvUUM8jq1P0",
+      authDomain: "foodkart-7c149.firebaseapp.com",
+      databaseURL: "https://foodkart-7c149.firebaseio.com",
+      projectId: "foodkart-7c149",
+      storageBucket: "foodkart-7c149.appspot.com",
+      messagingSenderId: "381409586491"
+    };
+    firebase.initializeApp(config);
+	</script>
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px;
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <ion-side-menus  ng-controller="indexCtrl" data-componentid="side-menu21" style="" enable-menu-with-back-views="false">
+        <ion-side-menu-content>
+            <ion-nav-bar class="bar-assertive">
+                <ion-nav-back-button></ion-nav-back-button>
+                <ion-nav-buttons side="left">
+                    <button ng-if="$root.extras" class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                    </button>
+                </ion-nav-buttons>
+                <ion-nav-buttons side="right">
+                  <button ui-sref="myCart" ng-if="$root.extras" class="button button-icon button-clear ion-ios-cart-outline">
+                    {{get_total()}}
+                  </button>
+                </ion-nav-buttons>
+            </ion-nav-bar>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+        <ion-side-menu side="left" id="side-menu21" ng-if="$root.extras">
+            <ion-header-bar class="expanded">
+              <!--<img ng-src="{{&apos;img/fk/&apos;+ user_info.photoURL +&apos;.jpg&apos;}}" class="avatar motion spin fade">-->
+              <div class="menu-bottom">
+                {{user_info.displayName}}
+              </div>
+            </ion-header-bar>
+            <ion-content class="stable-bg has-expanded-header">
+                <ion-list data-componentid="list1" id="menu-list1">
+                    <ion-item data-componentid="list-item1" menu-close="" ui-sref="menu2" id="menu-list-item1" class="item-icon-left  ">
+                        <i class="icon ion-ios-home-outline"></i>Drug List</ion-item>
+                    <ion-item data-componentid="list-item2" menu-close="" ui-sref="ocrcapture" id="menu-list-item2" class="item-icon-left">
+                        <i class="icon ion-ios-help-outline"></i>OCR CAPTURE</ion-item>
+                    <ion-item data-componentid="list-item3" menu-close="" ui-sref="settings" id="menu-list-item3" class="item-icon-left  ">
+                        <i class="icon ion-ios-gear-outline"></i>Settings</ion-item>
+                    <ion-item data-componentid="list-item6" menu-close="" ui-sref="support" id="menu-list-item6" class="item-icon-left  ">
+                        <i class="icon ion-ios-help-outline"></i>Support</ion-item>
+                    <ion-item ng-click="logout()" data-componentid="list-item7" style="" id="menu-list-item7" class="item-icon-left  ">
+                        <i class="icon ion-log-out"></i>Logout</ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+    </ion-side-menus>
+  </div>
+  </body>
+</html>
