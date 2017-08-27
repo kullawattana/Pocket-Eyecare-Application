@@ -8,7 +8,7 @@
 2. Recorded health information with voice terminals from the disabled. (Speech Recognition).
 3. Alert and send notification system (Firebase Notification).
 
-## Describe the problem the product is solving (facts please, no marketing-speAk) 
+## Describe the problem the product is solving (facts please, no marketing-speak) 
 >Medication is essential to living. But it can cause a terrible penalty if used incorrectly. The problem of drug insecurity of Thai people is common allergy medication drug deterioration. Overdose or to get a dose of inappropriate drugs, such as more or less, and the use of drugs not so well with the disease, etc. These problems. Part of this may be due to misunderstandings and improper drug behavior of the patient itself. The patient's insecurity can be caused by the health system and the inadequate pharmacy services especially the provincial hospital. Due to the current lack of capacity of pharmacists in the hospital.
 >If you go back 15-30 years ago, the role of the pharmacist is only to order the warehouse, dispensing and production work, but at present. The role of the pharmacist has changed. To be in charge of the drug safety system together with other professions such as outpatient pharmaceutical care. Inpatient Pharmacy Care At present, hospitals are developing to obtain Hospital Accreditation (HA). 
 >In addition to the patients in the health insurance system. The page has access to the service conveniently and is expected to receive quality medical care. So it is clear that the current workload is much higher than in the past. Health professionals such as doctors, dentists, nurses, pharmacists are stressed in their work and are very responsible.
