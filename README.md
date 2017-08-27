@@ -43,10 +43,10 @@ Doctors Get Notification, Notification and Information System (Firebase Notifica
 - Step 4: Order prescription drugs and check Barcode.
 
 ## Solution different to an existing one
-1.The patient creates a history of Algorithm to determine the patient's drug use. 
-2.Send the required drug information with OCR Image Recognition.	
-3.Send Notification, Email and Data from Submit System (Firebase Notification). 
-4.Order prescription drugs and check Barcode.
+1. The patient creates a history of Algorithm to determine the patient's drug use. 
+2. Send the required drug information with OCR Image Recognition.	
+3. Send Notification, Email and Data from Submit System (Firebase Notification). 
+4. Order prescription drugs and check Barcode.
 
 ## Planning to make money?
 1. Presenting a project for funding through the Thailand Tech Startup Association
@@ -55,15 +55,15 @@ Doctors Get Notification, Notification and Information System (Firebase Notifica
 4. Average sales growth is at least 30% per year.
 
 ## Discuss Impact of Solution on Community/ Competitive Solutions
--It saves information on the device that is with us almost always. We can easily find our own health information / history.
--Schedule data access from outsiders. Or security does not provide health information. This is our personal information. Spill to the unwanted person. Or those who aspire to business.
--Applications that need to be easy to understand. Can save data easily. And users can easily browse the information as well.
--Assignment of access rights to information such as pharmacists in general pharmacies with physicians. Or specialized doctors we should have access to our health information at a different level.
+- It saves information on the device that is with us almost always. We can easily find our own health information / history.
+- Schedule data access from outsiders. Or security does not provide health information. This is our personal information. Spill to the unwanted person. Or those who aspire to business.
+- Applications that need to be easy to understand. Can save data easily. And users can easily browse the information as well.
+- Assignment of access rights to information such as pharmacists in general pharmacies with physicians. Or specialized doctors we should have access to our health information at a different level.
 
 ## Discuss Business Viability of Application
--Reduce the history checking process with face detection.
--Reduce shock problems with illnesses such as heart disease and pressure with fingerprints.
--Reduce the problem of overdose. Enhanced drug delivery system, check medication, prescription drug delivery drug information, reduce drug errors, repeat the drug. And add drug-based behavior as defined by the pharmacist, line guide, navigation and E-mail.
+- Reduce the history checking process with face detection.
+- Reduce shock problems with illnesses such as heart disease and pressure with fingerprints.
+- Reduce the problem of overdose. Enhanced drug delivery system, check medication, prescription drug delivery drug information, reduce drug errors, repeat the drug. And add drug-based behavior as defined by the pharmacist, line guide, navigation and E-mail.
 
 ## Forms for patients to fill in a separate disease and other diseases
 1. Medicine Name
