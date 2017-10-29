@@ -1,12 +1,12 @@
 angular.module('app.services', [])
 .factory('fireBaseData', function($firebase) {
-	var ref = new Firebase("https://foodkart-7c149.firebaseio.com/"),
-    refCart = new Firebase("https://foodkart-7c149.firebaseio.com/cart"),
-    refUser = new Firebase("https://foodkart-7c149.firebaseio.com/users"),
-    refCategory = new Firebase("https://foodkart-7c149.firebaseio.com/category"),
-    refOrder = new Firebase("https://foodkart-7c149.firebaseio.com/orders"),
-    refFeatured = new Firebase("https://foodkart-7c149.firebaseio.com/featured"),
-    refMenu = new Firebase("https://foodkart-7c149.firebaseio.com/menu");
+	var ref = new Firebase("https://eyecare-2425d.firebaseapp.com/"),
+    refCart = new Firebase("https://eyecare-2425d.firebaseapp.com/cart"),
+    refUser = new Firebase("https://eyecare-2425d.firebaseapp.com/users"),
+    refCategory = new Firebase("https://eyecare-2425d.firebaseapp.com/category"),
+    refOrder = new Firebase("https://eyecare-2425d.firebaseapp.com/orders"),
+    refFeatured = new Firebase("https://eyecare-2425d.firebaseapp.com/featured"),
+    refMenu = new Firebase("https://eyecare-2425d.firebaseapp.com/menu");
   return {
     ref: function() {
       return ref;
