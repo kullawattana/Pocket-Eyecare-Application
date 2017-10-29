@@ -91,8 +91,6 @@ Doctors Get Notification, Notification and Information System (Firebase Notifica
 
 ![img](https://github.com/kullawattana/Pocket-Eyecare-Application/blob/master/Pocket%20Eyecare%20Project%20Document/Pocket%20Eyecare%20Application%20Screenshot/Step%204%20SignIn.png)
 
-![img](https://github.com/kullawattana/Pocket-Eyecare-Application/blob/master/Pocket%20Eyecare%20Project%20Document/Pocket%20Eyecare%20Application%20Screenshot/Step%205%20Mainmenu.png)
-
 ![img](https://github.com/kullawattana/Pocket-Eyecare-Application/blob/master/Pocket%20Eyecare%20Project%20Document/Pocket%20Eyecare%20Application%20Screenshot/Step%206%20Druglist_Firebase.png)
 
 ![img](https://github.com/kullawattana/Pocket-Eyecare-Application/blob/master/Pocket%20Eyecare%20Project%20Document/Pocket%20Eyecare%20Application%20Screenshot/Step%207%20OCR.png)
